@@ -220,6 +220,38 @@ body {
   color: #fff;
 }
 
+.rectangle {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: #ebebeb;
+  max-width: 1920px;
+  height: 630px;
+}
+.rectangle__content {
+  display: flex;
+  flex-direction: column;
+  margin-top: 100px;
+  padding-right: 650px;
+  gap: 40px;
+}
+.rectangle__content h4 {
+  opacity: 0.5;
+  font-size: 24px;
+}
+.rectangle__content h3 {
+  font-size: 48px;
+}
+.rectangle__from {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 80px;
+  gap: 30px;
+  width: 255px;
+  height: 130px;
+}
+
 @media screen and (max-width: 1220px) {
   .container {
     padding-left: 100px;
@@ -227,6 +259,13 @@ body {
   }
   .about {
     flex-direction: column;
+  }
+  .rectangle__content {
+    padding-right: 0px;
+  }
+  .rectangle__from {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
   }
 }
 @media screen and (max-width: 1100px) {
@@ -293,6 +332,16 @@ body {
   .service__cards-item {
     font-size: 16px;
     height: 300px;
+  }
+  .rectangle {
+    height: 1200px;
+  }
+  .rectangle__content {
+    max-width: 200px;
+  }
+  .rectangle__from {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
   }
 }
 @media screen and (max-width: 550px) {
